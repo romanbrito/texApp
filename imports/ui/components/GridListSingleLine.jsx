@@ -68,9 +68,10 @@ const tilesData = [
  */
 const getClick = (title) => console.log("hello click " + title);
 
-const GridListSingleLine = () => (
+const GridListSingleLine = (props) => (
 
   <div style={styles.root}>
+    <h1>{props.someTitle}</h1>
     <MuiThemeProvider>
     <GridList style={styles.gridList} cols={2.2}>
       {tilesData.map((tile) => (

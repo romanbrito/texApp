@@ -43,7 +43,7 @@ export default class orderNow extends Component {
              {/*onClick={this.getClick}*/}
         {/*/>*/}
 
-        <GridListSingleLine/>
+        <GridListSingleLine someTitle="hello from order now"/>
 
       </div>
     );
