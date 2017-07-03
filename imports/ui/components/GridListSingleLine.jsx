@@ -1,23 +1,19 @@
 import React, {Component} from 'react';
-import {Link} from 'react-router-dom';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import {GridList, GridTile} from 'material-ui/GridList';
 import IconButton from 'material-ui/IconButton';
 import StarBorder from 'material-ui/svg-icons/toggle/star-border';
-import RaisedButton from 'material-ui/RaisedButton';
-import Drawer from 'material-ui/Drawer';
-import MenuItem from 'material-ui/MenuItem';
+
+import OrderDrawer from './OrderDrawer';
 
 class GridListSingleLine extends Component {
 
   state = {
-    open: false,
-    order:'',
+    order:''
   };
-  handleToggle = () => this.setState({open: !this.state.open});
 
   getClick = (title) => {
-    console.log(title);
+    //console.log(title);
 
     this.setState(
       {order: title}
@@ -52,22 +48,8 @@ class GridListSingleLine extends Component {
           </MuiThemeProvider>
         </div>
 
-        <MuiThemeProvider>
-          <RaisedButton
-            label="New Order"
-            onTouchTap={this.handleToggle}
-          />
-        </MuiThemeProvider>
+        <OrderDrawer items={this.state.order}/>
 
-        <MuiThemeProvider>
-          <Drawer open={this.state.open}>
-            <Link to="/">
-              <MenuItem>Close</MenuItem>
-            </Link>
-            <MenuItem>{this.state.order}</MenuItem>
-            <MenuItem>Menu Item 2</MenuItem>
-          </Drawer>
-        </MuiThemeProvider>
 
       </div>
     );

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 
 
-export default class myRewards extends Component {
+export default class MyRewards extends Component {
 
   render() {
     return (

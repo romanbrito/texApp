@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 
 import GridListSingleLine from './GridListSingleLine';
 
-export default class orderNow extends Component {
+export default class OrderNow extends Component {
 
 
   render() {

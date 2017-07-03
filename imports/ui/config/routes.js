@@ -1,27 +1,25 @@
-import React from 'react';
-
-import orderNow from '../components/orderNow';
-import myRewards from '../components/myRewards';
-import locations from '../components/locations';
-import menu from '../components/menu';
+import OrderNow from '../components/OrderNow';
+import MyRewards from '../components/MyRewards';
+import Locations from '../components/Locations';
+import Menu from '../components/Menu';
 
 // route config
 const routes = [
   {
     path: '/orderNow',
-    component: orderNow
+    component: OrderNow
   },
   {
     path: '/myRewards',
-    component: myRewards
+    component: MyRewards
   },
   {
     path: '/locations',
-    component: locations
+    component: Locations
   },
   {
     path: '/menu',
-    component: menu
+    component: Menu
   },
 ];
 

@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 
 
 
-export default class locations extends Component {
+export default class Menu extends Component {
 
   render() {
     return (
-      <h1>locations</h1>
+      <h1>menu</h1>
     );
   }
 }
