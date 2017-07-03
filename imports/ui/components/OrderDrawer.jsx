@@ -14,6 +14,7 @@ class OrderDrawer extends Component {
 
   state = {
     open: false,
+    currentCartID: '',
   };
 
   handleToggle = () =>{
@@ -26,16 +27,19 @@ class OrderDrawer extends Component {
       products: [],
     };
 
-    Meteor.call('cart.insert', cart, (error) => {
+    Meteor.call('cart.insert', cart, (error, result) => {
       if (error) {
         console.log("error " + error.reason);
       } else {
-        console.log("Task added");
+        console.log("cartId " + result);
+
+        this.setState(
+          {
+            open: true,
+            currentCartID: result,
+          });
       }
     });
-
-      this.setState({open: true});
-
     }
 
   };
@@ -49,6 +53,13 @@ class OrderDrawer extends Component {
   }
 
   componentWillReceiveProps(nextProps) {
+    Meteor.call('cart.update', this.state.currentCartID, nextProps.order, (error) => {
+      if (error) {
+        console.log("error " + error.reason);
+      } else {
+        console.log("cart updated ");
+      }
+    })
 
   }
 

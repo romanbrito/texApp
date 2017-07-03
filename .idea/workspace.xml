@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff96a575-bd03-4dbe-bae1-029564bbfe3d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/api/orders.js" afterPath="$PROJECT_DIR$/imports/api/orders.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/components/GridListSingleLine.jsx" afterPath="$PROJECT_DIR$/imports/ui/components/GridListSingleLine.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/components/OrderDrawer.jsx" afterPath="$PROJECT_DIR$/imports/ui/components/OrderDrawer.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/methods.js" afterPath="$PROJECT_DIR$/server/methods.js" />
     </list>
@@ -34,13 +32,13 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="OrderDrawer.jsx" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/imports/ui/components/OrderDrawer.jsx">
+          <file leaf-file-name="methods.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/server/methods.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="362">
-                  <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+                <state relative-caret-position="204">
+                  <caret line="12" column="29" lean-forward="false" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
                   <folding>
-                    <element signature="e#0#39#0" expanded="true" />
+                    <element signature="e#0#37#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -49,22 +47,10 @@
           <file leaf-file-name="orders.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/imports/api/orders.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="238">
-                  <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+                <state relative-caret-position="204">
+                  <caret line="12" column="28" lean-forward="true" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
                   <folding>
                     <element signature="e#0#35#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="methods.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/server/methods.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="204">
-                  <caret line="12" column="23" lean-forward="true" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-                  <folding>
-                    <element signature="e#0#37#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -74,7 +60,7 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="GridListSingleLine.jsx" pinned="false" current-in-tab="true">
+          <file leaf-file-name="GridListSingleLine.jsx" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/imports/ui/components/GridListSingleLine.jsx">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="450">
@@ -83,6 +69,18 @@
                     <element signature="e#0#39#0" expanded="true" />
                     <element signature="e#1602#1838#0" expanded="false" />
                     <element signature="e#1858#2723#0" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="OrderDrawer.jsx" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/imports/ui/components/OrderDrawer.jsx">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="464">
+                  <caret line="46" column="35" lean-forward="false" selection-start-line="46" selection-start-column="35" selection-end-line="46" selection-end-column="35" />
+                  <folding>
+                    <element signature="e#0#39#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -115,9 +113,9 @@
         <option value="$PROJECT_DIR$/server/main.js" />
         <option value="$PROJECT_DIR$/.meteor/packages" />
         <option value="$PROJECT_DIR$/imports/api/orders.js" />
-        <option value="$PROJECT_DIR$/server/methods.js" />
         <option value="$PROJECT_DIR$/imports/ui/components/GridListSingleLine.jsx" />
         <option value="$PROJECT_DIR$/imports/ui/components/OrderDrawer.jsx" />
+        <option value="$PROJECT_DIR$/server/methods.js" />
       </list>
     </option>
   </component>
@@ -391,7 +389,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24473000" />
+    <option name="totallyTimeSpent" value="27013000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1096" extended-state="6" />
@@ -831,20 +829,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/imports/api/orders.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state relative-caret-position="204">
+          <caret line="12" column="28" lean-forward="true" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/components/OrderDrawer.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -861,10 +849,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/components/OrderDrawer.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="46" column="35" lean-forward="false" selection-start-line="46" selection-start-column="35" selection-end-line="46" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/server/methods.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="12" column="23" lean-forward="true" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+          <caret line="12" column="29" lean-forward="false" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>

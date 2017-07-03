@@ -10,8 +10,18 @@ Meteor.methods({
     //   throw new Meteor.Error('not-authorized');
     // }
 
-    Carts.insert(cart);
+    // callback to get cartID
+    return Carts.insert(cart);
 
   },
+
+  'cart.update'(cartID, product) {
+
+    Carts.update(cartID, {
+      $push: { products: product}
+    });
+  }
+
+
 
 });
