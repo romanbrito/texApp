@@ -1,9 +1,14 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
+import { Meteor } from 'meteor/meteor';
+import { createContainer } from 'meteor/react-meteor-data';
+
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import RaisedButton from 'material-ui/RaisedButton';
 import Drawer from 'material-ui/Drawer';
 import MenuItem from 'material-ui/MenuItem';
+
+import { Orders } from '../../api/orders';
 
 class OrderDrawer extends Component {
 
@@ -14,8 +19,9 @@ class OrderDrawer extends Component {
   handleToggle = () => this.setState({open: !this.state.open});
 
   renderOrder() {
-    let order = this.props.items;
-    return <MenuItem>{order}</MenuItem>
+    return this.props.items.map((item) => (
+      <MenuItem key={item._id}>{item.item}</MenuItem>
+    ));
   }
 
   render() {
@@ -47,4 +53,9 @@ class OrderDrawer extends Component {
   }
 }
 
-export default OrderDrawer;
+export default createContainer (() => {
+  // subscribe api after removing autopublish
+  return {
+    items: Orders.find({}).fetch(),
+  }
+}, OrderDrawer);
