@@ -11,12 +11,18 @@ import MenuItem from 'material-ui/MenuItem';
 class GridListSingleLine extends Component {
 
   state = {
-    open: false
+    open: false,
+    order:'',
   };
   handleToggle = () => this.setState({open: !this.state.open});
 
   getClick = (title) => {
     console.log(title);
+
+    this.setState(
+      {order: title}
+    )
+
   };
 
   render() {
@@ -58,7 +64,7 @@ class GridListSingleLine extends Component {
             <Link to="/">
               <MenuItem>Close</MenuItem>
             </Link>
-            <MenuItem>Menu Item</MenuItem>
+            <MenuItem>{this.state.order}</MenuItem>
             <MenuItem>Menu Item 2</MenuItem>
           </Drawer>
         </MuiThemeProvider>
