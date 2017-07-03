@@ -13,12 +13,14 @@ class GridListSingleLine extends Component {
   };
 
   getClick = (title) => {
-    //console.log(title);
+    //get item and put in mongodb
+
+    console.log("grid " + title);
+
 
     this.setState(
       {order: title}
     )
-
   };
 
   render() {
@@ -48,7 +50,7 @@ class GridListSingleLine extends Component {
           </MuiThemeProvider>
         </div>
 
-        <OrderDrawer items={this.state.order}/>
+        <OrderDrawer order={this.state.order}/>
 
 
       </div>

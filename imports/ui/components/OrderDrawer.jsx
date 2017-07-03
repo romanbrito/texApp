@@ -16,7 +16,31 @@ class OrderDrawer extends Component {
     open: false,
   };
 
-  handleToggle = () => this.setState({open: !this.state.open});
+  handleToggle = () =>{
+    // this.setState({open: !this.state.open});
+
+    if (!this.state.open) {
+
+    let cart = {
+      // user: Meteor.userId(),
+      products: [],
+    };
+
+    Meteor.call('cart.insert', cart, (error) => {
+      if (error) {
+        console.log("error " + error.reason);
+      } else {
+        console.log("Task added");
+      }
+    });
+
+      this.setState({open: true});
+
+    }
+
+  };
+
+  handleClose = () => this.setState({open: false});
 
   renderOrder() {
     return this.props.items.map((item) => (
@@ -24,11 +48,16 @@ class OrderDrawer extends Component {
     ));
   }
 
+  componentWillReceiveProps(nextProps) {
+
+  }
+
   render() {
     return (
       <div>
 
-        {console.log('from grid ' + this.props.items)}
+        {console.log('drawer ' + this.props.items)}
+        {console.log('drawer ' + this.props.order)}
 
         <MuiThemeProvider>
           <RaisedButton
@@ -38,10 +67,11 @@ class OrderDrawer extends Component {
         </MuiThemeProvider>
 
         <MuiThemeProvider>
-          <Drawer open={this.state.open}>
-            <Link to="/">
-              <MenuItem>Close</MenuItem>
-            </Link>
+          <Drawer
+            open={this.state.open}
+            onRequestChange={(open) => this.setState({open})}
+          >
+            <MenuItem onTouchTap={this.handleClose}>Cancel</MenuItem>
             <MenuItem>Menu Item 1</MenuItem>
             <MenuItem>Menu Item 2</MenuItem>
             {this.renderOrder()}
