@@ -48,7 +48,8 @@ class OrderDrawer extends Component {
 
   renderOrder() {
     if (this.props.items) {
-      console.log('render Order props ' + this.props.items.products);
+
+    console.log('render Order props ' + this.props.items.products);
 
       return this.props.items.products.map((item, index) => (
         <MenuItem key={index}>{item}</MenuItem>
@@ -103,6 +104,6 @@ class OrderDrawer extends Component {
 export default createContainer (() => {
   // subscribe api after removing autopublish
   return {
-    items: Carts.findOne({_id:"TFv2rv8N8R8GMPGB6"}),
+    items: Carts.findOne({_id:"kQGGgciara9tKkxik"}),
   }
 }, OrderDrawer);
