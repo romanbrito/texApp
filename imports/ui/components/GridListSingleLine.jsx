@@ -12,6 +12,8 @@ class GridListSingleLine extends Component {
 
   state = {
     order:'',
+    orderArray: [],
+    quantity:0,
     open: false,
     currentCartID: '',
   };
@@ -19,10 +21,27 @@ class GridListSingleLine extends Component {
   getClick = (title) => {
     //get item and put in mongodb
 
+    if (this.state.orderArray.indexOf(title) === -1) {
+      console.log("item not in array");
+
+      this.state.orderArray.push(title, 1);
+      console.log(this.state.orderArray);
+    } else {
+      console.log("item already in array");
+      //update quantity
+      let arrPosition = this.state.orderArray.indexOf(title);
+      let quantityPosition = this.state.orderArray.indexOf(title)+1;
+      console.log("and its position is " + arrPosition);
+      console.log("and its quantity is " + quantityPosition);
+      this.state.orderArray[quantityPosition] = this.state.orderArray[quantityPosition] +1;
+      console.log("the updated quantity of " + title + " is " + this.state.orderArray[quantityPosition]);
+      let updatedOrderArray = this.state.orderArray;
+      console.log("updated order Array " + updatedOrderArray);
+    }
+
     console.log("grid " + title);
 
-
-    this.setState(
+        this.setState(
       {order: title}
     )
   };

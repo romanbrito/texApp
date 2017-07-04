@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff96a575-bd03-4dbe-bae1-029564bbfe3d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/components/OrderDrawer.jsx" afterPath="$PROJECT_DIR$/imports/ui/components/OrderDrawer.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/components/GridListSingleLine.jsx" afterPath="$PROJECT_DIR$/imports/ui/components/GridListSingleLine.jsx" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -59,13 +60,12 @@
           <file leaf-file-name="GridListSingleLine.jsx" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/imports/ui/components/GridListSingleLine.jsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="331">
-                  <caret line="92" column="62" lean-forward="false" selection-start-line="92" selection-start-column="62" selection-end-line="92" selection-end-column="62" />
+                <state relative-caret-position="459">
+                  <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
                   <folding>
                     <element signature="e#0#39#0" expanded="true" />
-                    <element signature="e#2565#2801#0" expanded="false" />
-                    <element signature="e#2821#3686#0" expanded="false" />
-                    <element signature="e#2825#2935#0" expanded="false" />
+                    <element signature="e#3438#3674#0" expanded="false" />
+                    <element signature="e#3698#3808#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -78,8 +78,8 @@
           <file leaf-file-name="OrderDrawer.jsx" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/imports/ui/components/OrderDrawer.jsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="238">
-                  <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+                <state relative-caret-position="459">
+                  <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
                   <folding>
                     <element signature="e#0#39#0" expanded="true" />
                   </folding>
@@ -115,8 +115,8 @@
         <option value="$PROJECT_DIR$/.meteor/packages" />
         <option value="$PROJECT_DIR$/server/methods.js" />
         <option value="$PROJECT_DIR$/imports/api/orders.js" />
-        <option value="$PROJECT_DIR$/imports/ui/components/GridListSingleLine.jsx" />
         <option value="$PROJECT_DIR$/imports/ui/components/OrderDrawer.jsx" />
+        <option value="$PROJECT_DIR$/imports/ui/components/GridListSingleLine.jsx" />
       </list>
     </option>
   </component>
@@ -390,7 +390,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41937000" />
+    <option name="totallyTimeSpent" value="46269000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1096" extended-state="6" />
@@ -494,9 +494,8 @@
           <caret line="43" column="20" lean-forward="false" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="20" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
-            <element signature="e#2565#2801#0" expanded="false" />
-            <element signature="e#2821#3686#0" expanded="false" />
-            <element signature="e#2825#2935#0" expanded="false" />
+            <element signature="e#3438#3674#0" expanded="false" />
+            <element signature="e#3698#3808#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -628,9 +627,8 @@
           <caret line="76" column="19" lean-forward="false" selection-start-line="76" selection-start-column="19" selection-end-line="76" selection-end-column="19" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
-            <element signature="e#2565#2801#0" expanded="false" />
-            <element signature="e#2821#3686#0" expanded="false" />
-            <element signature="e#2825#2935#0" expanded="false" />
+            <element signature="e#3438#3674#0" expanded="false" />
+            <element signature="e#3698#3808#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -696,9 +694,8 @@
           <caret line="82" column="77" lean-forward="false" selection-start-line="82" selection-start-column="77" selection-end-line="82" selection-end-column="77" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
-            <element signature="e#2565#2801#0" expanded="false" />
-            <element signature="e#2821#3686#0" expanded="false" />
-            <element signature="e#2825#2935#0" expanded="false" />
+            <element signature="e#3438#3674#0" expanded="false" />
+            <element signature="e#3698#3808#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -852,25 +849,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/components/GridListSingleLine.jsx">
+    <entry file="file://$PROJECT_DIR$/imports/ui/components/OrderDrawer.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="92" column="62" lean-forward="false" selection-start-line="92" selection-start-column="62" selection-end-line="92" selection-end-column="62" />
+        <state relative-caret-position="459">
+          <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
-            <element signature="e#2565#2801#0" expanded="false" />
-            <element signature="e#2821#3686#0" expanded="false" />
-            <element signature="e#2825#2935#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/components/OrderDrawer.jsx">
+    <entry file="file://$PROJECT_DIR$/imports/ui/components/GridListSingleLine.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        <state relative-caret-position="459">
+          <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#3438#3674#0" expanded="false" />
+            <element signature="e#3698#3808#0" expanded="false" />
           </folding>
         </state>
       </provider>
