@@ -8,7 +8,7 @@ import RaisedButton from 'material-ui/RaisedButton';
 import Drawer from 'material-ui/Drawer';
 import MenuItem from 'material-ui/MenuItem';
 
-import { Orders } from '../../api/orders';
+import { Carts, Orders } from '../../api/orders';
 
 class OrderDrawer extends Component {
 
@@ -22,24 +22,24 @@ class OrderDrawer extends Component {
 
     if (!this.state.open) {
 
-    let cart = {
-      // user: Meteor.userId(),
-      products: [],
-    };
+      let cart = {
+        // user: Meteor.userId(),
+        products: [],
+      };
 
-    Meteor.call('cart.insert', cart, (error, result) => {
-      if (error) {
-        console.log("error " + error.reason);
-      } else {
-        console.log("cartId " + result);
+      Meteor.call('cart.insert', cart, (error, result) => {
+        if (error) {
+          console.log("error " + error.reason);
+        } else {
+          console.log("cartId " + result);
 
-        this.setState(
-          {
-            open: true,
-            currentCartID: result,
-          });
-      }
-    });
+          this.setState(
+            {
+              open: true,
+              currentCartID: result,
+            });
+        }
+      });
     }
 
   };
@@ -47,9 +47,14 @@ class OrderDrawer extends Component {
   handleClose = () => this.setState({open: false});
 
   renderOrder() {
-    return this.props.items.map((item) => (
-      <MenuItem key={item._id}>{item.item}</MenuItem>
-    ));
+    if (this.props.items) {
+      console.log('render Order props ' + this.props.items.products);
+
+      return this.props.items.products.map((item, index) => (
+        <MenuItem key={index}>{item}</MenuItem>
+      ));
+
+    }
   }
 
   componentWillReceiveProps(nextProps) {
@@ -94,9 +99,10 @@ class OrderDrawer extends Component {
   }
 }
 
+// get cart products from mongodb
 export default createContainer (() => {
   // subscribe api after removing autopublish
   return {
-    items: Orders.find({}).fetch(),
+    items: Carts.findOne({_id:"TFv2rv8N8R8GMPGB6"}),
   }
 }, OrderDrawer);
