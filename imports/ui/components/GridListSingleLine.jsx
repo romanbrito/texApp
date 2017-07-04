@@ -3,13 +3,17 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import {GridList, GridTile} from 'material-ui/GridList';
 import IconButton from 'material-ui/IconButton';
 import StarBorder from 'material-ui/svg-icons/toggle/star-border';
+import RaisedButton from 'material-ui/RaisedButton';
 
 import OrderDrawer from './OrderDrawer';
+import OrderDrawerContainer from './OrderDrawer';
 
 class GridListSingleLine extends Component {
 
   state = {
-    order:''
+    order:'',
+    open: false,
+    currentCartID: '',
   };
 
   getClick = (title) => {
@@ -22,6 +26,35 @@ class GridListSingleLine extends Component {
       {order: title}
     )
   };
+
+  handleToggle = () =>{
+    // this.setState({open: !this.state.open});
+
+    if (!this.state.open) {
+
+      let cart = {
+        // user: Meteor.userId(),
+        products: [],
+      };
+
+      Meteor.call('cart.insert', cart, (error, result) => {
+        if (error) {
+          console.log("error " + error.reason);
+        } else {
+          console.log("cartId " + result);
+
+          this.setState(
+            {
+              open: true,
+              currentCartID: result,
+            });
+        }
+      });
+    }
+
+  };
+
+  handleClose = () => this.setState({open: false});
 
   render() {
     return (
@@ -50,7 +83,14 @@ class GridListSingleLine extends Component {
           </MuiThemeProvider>
         </div>
 
-        <OrderDrawer order={this.state.order}/>
+        <MuiThemeProvider>
+          <RaisedButton
+            label="New Order"
+            onTouchTap={this.handleToggle}
+          />
+        </MuiThemeProvider>
+
+        <OrderDrawerContainer cartID={this.state.currentCartID} openDrawer={this.state.open} order={this.state.order}/>
 
 
       </div>
