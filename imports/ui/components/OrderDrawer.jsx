@@ -14,18 +14,21 @@ class OrderDrawer extends Component {
 
 
   componentWillReceiveProps(nextProps) {
-    // if (this.props !== nextProps) {
-    //
-    //
-    // Meteor.call('cart.update', nextProps.cartID, nextProps.order, (error) => {
-    //   if (error) {
-    //     console.log("error " + error.reason);
-    //   } else {
-    //     console.log("cart updated ");
-    //   }
-    // })
-    //
-    // }
+    console.log("this props " + this.props.order);
+    console.log("next props " + nextProps.order);
+
+    if (this.props.order !== nextProps.order) {
+
+
+    Meteor.call('cart.update', nextProps.cartID, nextProps.order, (error) => {
+      if (error) {
+        console.log("error " + error.reason);
+      } else {
+        console.log("cart updated ");
+      }
+    })
+
+    }
 
   }
 
