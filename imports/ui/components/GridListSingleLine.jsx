@@ -72,14 +72,6 @@ class GridListSingleLine extends Component {
 
   };
 
-  // child updating parent
-  handleClose = () => {
-    this.setState({
-      open: false,
-      quantity: 0,
-    })
-  };
-
   render() {
     return (
       <div className="container">

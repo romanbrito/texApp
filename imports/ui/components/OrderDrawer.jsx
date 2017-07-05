@@ -41,26 +41,19 @@ class OrderDrawer extends Component {
 
     }
   }
-  //sending function to parent
-  handleCancel = () => {
-    console.log("please cancel");
-    this.props.closeDrawer();
-  };
 
   render() {
     return (
       <div>
-
-        {/*{console.log('drawer items ' + this.props.items)}*/}
-        {/*{console.log('drawer order ' + this.props.order)}*/}
-        {console.log('drawer orderObj ' + this.props.orderObj)}
 
         <MuiThemeProvider>
           <Drawer
             open={this.props.openDrawer}
             // onRequestChange={(open) => this.setState({open})}
           >
-            <MenuItem onTouchTap={this.handleCancel}>Cancel</MenuItem>
+            <Link to="/">
+            <MenuItem>Cancel</MenuItem>
+            </Link>
             <MenuItem># of Items {this.props.quantity}</MenuItem>
             {this.renderOrder()}
           </Drawer>
