@@ -36,7 +36,7 @@ class OrderDrawer extends Component {
       console.log('render Order props ' + JSON.stringify(this.props.items.products));
 
       return this.props.items.products.map((item) => (
-        <MenuItem key={item.name}>{item.name} Quantity {item.Q}</MenuItem>
+        <MenuItem key={item.name}>{item.name} x {item.Q} @ {item.price}</MenuItem>
       ));
 
     }

@@ -20,14 +20,15 @@ class GridListSingleLine extends Component {
 
   getClick = (title) => {
     //get position in array
-    let elementPos = this.state.orderObj.map((item) => {return item.name; }).indexOf(title);
+    let elementPos = this.state.orderObj.map((item) => {return item.name; }).indexOf(title.title);
 
     // if item is not in array insert it
     if (elementPos === -1) {
 
       let ItemObject = {
-        name: title,
+        name: title.title,
         Q: 1,
+        price: title.price
       };
 
       this.state.orderObj.push(ItemObject);
@@ -85,13 +86,14 @@ class GridListSingleLine extends Component {
                 <GridTile
                   key={tile.img}
                   title={tile.title}
+                  subtitle={tile.price}
                   actionIcon={<IconButton><StarBorder color="rgb(0, 188, 212)"/></IconButton>}
                   titleStyle={styles.titleStyle}
                   titleBackground="linear-gradient(to top, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.3) 70%,rgba(0,0,0,0) 100%)"
                 >
                   <img src={tile.img}
                        onClick={() => {
-                         this.getClick(tile.title)
+                         this.getClick(tile)
                        }}/>
                 </GridTile>
               ))}
@@ -137,41 +139,49 @@ const tilesData = [
     img: 'https://lorempixel.com/400/400/food/1',
     title: 'Founders Favorite',
     author: 'jill111',
+    price: 11,
   },
   {
     img: 'https://lorempixel.com/400/400/food/2',
     title: 'Tasty burger',
     author: 'pashminu',
+    price: 7,
   },
   {
     img: 'https://lorempixel.com/400/400/food/3',
     title: 'Camera',
     author: 'Danson67',
+    price: 6,
   },
   {
     img: 'https://lorempixel.com/400/400/food/4',
     title: 'Morning',
     author: 'fancycrave1',
+    price: 5,
   },
   {
     img: 'https://lorempixel.com/400/400/food/5',
     title: 'Hats',
     author: 'Hans',
+    price: 4,
   },
   {
     img: 'https://lorempixel.com/400/400/food/6',
     title: 'Honey',
     author: 'fancycravel',
+    price: 3,
   },
   {
     img: 'https://lorempixel.com/400/400/food/7',
     title: 'Vegetables',
     author: 'jill111',
+    price: 2,
   },
   {
     img: 'https://lorempixel.com/400/400/food/8',
     title: 'Water plant',
     author: 'BkrmadtyaKarki',
+    price: 1,
   },
 ];
 

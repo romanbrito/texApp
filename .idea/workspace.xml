@@ -21,7 +21,7 @@
     <splitter split-orientation="horizontal" split-proportion="0.45277777">
       <split-first>
         <leaf>
-          <file leaf-file-name="OrderNow.jsx" pinned="false" current-in-tab="true">
+          <file leaf-file-name="OrderNow.jsx" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/imports/ui/components/OrderNow.jsx">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="272">
@@ -57,16 +57,14 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="GridListSingleLine.jsx" pinned="false" current-in-tab="false">
+          <file leaf-file-name="GridListSingleLine.jsx" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/imports/ui/components/GridListSingleLine.jsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="340">
-                  <caret line="74" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+                <state relative-caret-position="372">
+                  <caret line="141" column="13" lean-forward="false" selection-start-line="141" selection-start-column="13" selection-end-line="141" selection-end-column="13" />
                   <folding>
                     <element signature="e#0#39#0" expanded="true" />
-                    <element signature="e#3304#4169#0" expanded="false" />
-                    <marker date="1499229285836" expanded="false" signature="3048:3284" ph="{...}" />
-                    <marker date="1499229285836" expanded="false" signature="3308:3418" ph="{&quot;img&quot;: 'https://lorempixel.com/400/400/food/1'...}" />
+                    <marker date="1499271553553" expanded="false" signature="3121:3357" ph="{...}" />
                   </folding>
                 </state>
               </provider>
@@ -79,8 +77,8 @@
           <file leaf-file-name="OrderDrawer.jsx" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/imports/ui/components/OrderDrawer.jsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="238">
-                  <caret line="53" column="23" lean-forward="false" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="23" />
+                <state relative-caret-position="498">
+                  <caret line="44" column="12" lean-forward="true" selection-start-line="44" selection-start-column="12" selection-end-line="44" selection-end-column="12" />
                   <folding>
                     <element signature="e#0#39#0" expanded="true" />
                   </folding>
@@ -123,8 +121,8 @@
         <option value="$PROJECT_DIR$/.meteor/packages" />
         <option value="$PROJECT_DIR$/imports/api/orders.js" />
         <option value="$PROJECT_DIR$/server/methods.js" />
-        <option value="$PROJECT_DIR$/imports/ui/components/GridListSingleLine.jsx" />
         <option value="$PROJECT_DIR$/imports/ui/components/OrderDrawer.jsx" />
+        <option value="$PROJECT_DIR$/imports/ui/components/GridListSingleLine.jsx" />
       </list>
     </option>
   </component>
@@ -398,7 +396,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63525000" />
+    <option name="totallyTimeSpent" value="66991000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1096" extended-state="6" />
@@ -519,9 +517,7 @@
           <caret line="43" column="20" lean-forward="false" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="20" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
-            <element signature="e#3304#4169#0" expanded="false" />
-            <marker date="1499229285836" expanded="false" signature="3048:3284" ph="{...}" />
-            <marker date="1499229285836" expanded="false" signature="3308:3418" ph="{&quot;img&quot;: 'https://lorempixel.com/400/400/food/1'...}" />
+            <marker date="1499271553553" expanded="false" signature="3121:3357" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -653,9 +649,7 @@
           <caret line="76" column="19" lean-forward="false" selection-start-line="76" selection-start-column="19" selection-end-line="76" selection-end-column="19" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
-            <element signature="e#3304#4169#0" expanded="false" />
-            <marker date="1499229285836" expanded="false" signature="3048:3284" ph="{...}" />
-            <marker date="1499229285836" expanded="false" signature="3308:3418" ph="{&quot;img&quot;: 'https://lorempixel.com/400/400/food/1'...}" />
+            <marker date="1499271553553" expanded="false" signature="3121:3357" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -721,9 +715,7 @@
           <caret line="82" column="77" lean-forward="false" selection-start-line="82" selection-start-column="77" selection-end-line="82" selection-end-column="77" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
-            <element signature="e#3304#4169#0" expanded="false" />
-            <marker date="1499229285836" expanded="false" signature="3048:3284" ph="{...}" />
-            <marker date="1499229285836" expanded="false" signature="3308:3418" ph="{&quot;img&quot;: 'https://lorempixel.com/400/400/food/1'...}" />
+            <marker date="1499271553553" expanded="false" signature="3121:3357" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -866,19 +858,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/components/GridListSingleLine.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="74" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-            <element signature="e#3304#4169#0" expanded="false" />
-            <marker date="1499229285836" expanded="false" signature="3048:3284" ph="{...}" />
-            <marker date="1499229285836" expanded="false" signature="3308:3418" ph="{&quot;img&quot;: 'https://lorempixel.com/400/400/food/1'...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/imports/ui/components/OrderNow.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -891,10 +870,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/imports/ui/components/OrderDrawer.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="53" column="23" lean-forward="false" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="23" />
+        <state relative-caret-position="498">
+          <caret line="44" column="12" lean-forward="true" selection-start-line="44" selection-start-column="12" selection-end-line="44" selection-end-column="12" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/components/GridListSingleLine.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="141" column="13" lean-forward="false" selection-start-line="141" selection-start-column="13" selection-end-line="141" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+            <marker date="1499271553553" expanded="false" signature="3121:3357" ph="{...}" />
           </folding>
         </state>
       </provider>
