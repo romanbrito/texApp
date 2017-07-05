@@ -18,7 +18,7 @@ Meteor.methods({
   'cart.update'(cartID, product) {
 
     Carts.update(cartID, {
-      $push: { products: product}
+      $set: { products: product}
     });
   }
 
