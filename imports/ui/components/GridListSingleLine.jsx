@@ -72,7 +72,13 @@ class GridListSingleLine extends Component {
 
   };
 
-  handleClose = () => this.setState({open: false});
+  // child updating parent
+  handleClose = () => {
+    this.setState({
+      open: false,
+      quantity: 0,
+    })
+  };
 
   render() {
     return (
@@ -108,7 +114,7 @@ class GridListSingleLine extends Component {
           />
         </MuiThemeProvider>
 
-        <OrderDrawerContainer quantity={this.state.quantity} cartID={this.state.currentCartID} openDrawer={this.state.open} order={this.state.order} orderObj={this.state.orderObj}/>
+        <OrderDrawerContainer closeDrawer={this.handleClose} quantity={this.state.quantity} cartID={this.state.currentCartID} openDrawer={this.state.open} order={this.state.order} orderObj={this.state.orderObj}/>
 
 
       </div>

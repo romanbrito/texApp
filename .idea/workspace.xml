@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ff96a575-bd03-4dbe-bae1-029564bbfe3d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/components/GridListSingleLine.jsx" afterPath="$PROJECT_DIR$/imports/ui/components/GridListSingleLine.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/components/OrderDrawer.jsx" afterPath="$PROJECT_DIR$/imports/ui/components/OrderDrawer.jsx" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -59,13 +60,13 @@
           <file leaf-file-name="GridListSingleLine.jsx" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/imports/ui/components/GridListSingleLine.jsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="107">
-                  <caret line="22" column="40" lean-forward="false" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
+                <state relative-caret-position="306">
+                  <caret line="78" column="18" lean-forward="true" selection-start-line="78" selection-start-column="18" selection-end-line="78" selection-end-column="18" />
                   <folding>
                     <element signature="e#0#39#0" expanded="true" />
-                    <element signature="e#3326#4191#0" expanded="false" />
-                    <marker date="1499227162347" expanded="false" signature="3070:3306" ph="{...}" />
-                    <marker date="1499227162347" expanded="false" signature="3330:3440" ph="{&quot;img&quot;: 'https://lorempixel.com/400/400/food/1'...}" />
+                    <element signature="e#3426#4291#0" expanded="false" />
+                    <marker date="1499228599924" expanded="false" signature="3170:3406" ph="{...}" />
+                    <marker date="1499228599924" expanded="false" signature="3430:3540" ph="{&quot;img&quot;: 'https://lorempixel.com/400/400/food/1'...}" />
                   </folding>
                 </state>
               </provider>
@@ -78,8 +79,8 @@
           <file leaf-file-name="OrderDrawer.jsx" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/imports/ui/components/OrderDrawer.jsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="38" column="62" lean-forward="false" selection-start-line="38" selection-start-column="62" selection-end-line="38" selection-end-column="62" />
+                <state relative-caret-position="527">
+                  <caret line="63" column="65" lean-forward="false" selection-start-line="63" selection-start-column="65" selection-end-line="63" selection-end-column="65" />
                   <folding>
                     <element signature="e#0#39#0" expanded="true" />
                   </folding>
@@ -122,8 +123,8 @@
         <option value="$PROJECT_DIR$/.meteor/packages" />
         <option value="$PROJECT_DIR$/imports/api/orders.js" />
         <option value="$PROJECT_DIR$/server/methods.js" />
-        <option value="$PROJECT_DIR$/imports/ui/components/GridListSingleLine.jsx" />
         <option value="$PROJECT_DIR$/imports/ui/components/OrderDrawer.jsx" />
+        <option value="$PROJECT_DIR$/imports/ui/components/GridListSingleLine.jsx" />
       </list>
     </option>
   </component>
@@ -397,7 +398,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61806000" />
+    <option name="totallyTimeSpent" value="62802000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1096" extended-state="6" />
@@ -518,9 +519,9 @@
           <caret line="43" column="20" lean-forward="false" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="20" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
-            <element signature="e#3326#4191#0" expanded="false" />
-            <marker date="1499227162347" expanded="false" signature="3070:3306" ph="{...}" />
-            <marker date="1499227162347" expanded="false" signature="3330:3440" ph="{&quot;img&quot;: 'https://lorempixel.com/400/400/food/1'...}" />
+            <element signature="e#3426#4291#0" expanded="false" />
+            <marker date="1499228599924" expanded="false" signature="3170:3406" ph="{...}" />
+            <marker date="1499228599924" expanded="false" signature="3430:3540" ph="{&quot;img&quot;: 'https://lorempixel.com/400/400/food/1'...}" />
           </folding>
         </state>
       </provider>
@@ -652,9 +653,9 @@
           <caret line="76" column="19" lean-forward="false" selection-start-line="76" selection-start-column="19" selection-end-line="76" selection-end-column="19" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
-            <element signature="e#3326#4191#0" expanded="false" />
-            <marker date="1499227162347" expanded="false" signature="3070:3306" ph="{...}" />
-            <marker date="1499227162347" expanded="false" signature="3330:3440" ph="{&quot;img&quot;: 'https://lorempixel.com/400/400/food/1'...}" />
+            <element signature="e#3426#4291#0" expanded="false" />
+            <marker date="1499228599924" expanded="false" signature="3170:3406" ph="{...}" />
+            <marker date="1499228599924" expanded="false" signature="3430:3540" ph="{&quot;img&quot;: 'https://lorempixel.com/400/400/food/1'...}" />
           </folding>
         </state>
       </provider>
@@ -720,9 +721,9 @@
           <caret line="82" column="77" lean-forward="false" selection-start-line="82" selection-start-column="77" selection-end-line="82" selection-end-column="77" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
-            <element signature="e#3326#4191#0" expanded="false" />
-            <marker date="1499227162347" expanded="false" signature="3070:3306" ph="{...}" />
-            <marker date="1499227162347" expanded="false" signature="3330:3440" ph="{&quot;img&quot;: 'https://lorempixel.com/400/400/food/1'...}" />
+            <element signature="e#3426#4291#0" expanded="false" />
+            <marker date="1499228599924" expanded="false" signature="3170:3406" ph="{...}" />
+            <marker date="1499228599924" expanded="false" signature="3430:3540" ph="{&quot;img&quot;: 'https://lorempixel.com/400/400/food/1'...}" />
           </folding>
         </state>
       </provider>
@@ -875,25 +876,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/components/GridListSingleLine.jsx">
+    <entry file="file://$PROJECT_DIR$/imports/ui/components/OrderDrawer.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="22" column="40" lean-forward="false" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
+        <state relative-caret-position="527">
+          <caret line="63" column="65" lean-forward="false" selection-start-line="63" selection-start-column="65" selection-end-line="63" selection-end-column="65" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
-            <element signature="e#3326#4191#0" expanded="false" />
-            <marker date="1499227162347" expanded="false" signature="3070:3306" ph="{...}" />
-            <marker date="1499227162347" expanded="false" signature="3330:3440" ph="{&quot;img&quot;: 'https://lorempixel.com/400/400/food/1'...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/components/OrderDrawer.jsx">
+    <entry file="file://$PROJECT_DIR$/imports/ui/components/GridListSingleLine.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="38" column="62" lean-forward="false" selection-start-line="38" selection-start-column="62" selection-end-line="38" selection-end-column="62" />
+        <state relative-caret-position="306">
+          <caret line="78" column="18" lean-forward="true" selection-start-line="78" selection-start-column="18" selection-end-line="78" selection-end-column="18" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#3426#4291#0" expanded="false" />
+            <marker date="1499228599924" expanded="false" signature="3170:3406" ph="{...}" />
+            <marker date="1499228599924" expanded="false" signature="3430:3540" ph="{&quot;img&quot;: 'https://lorempixel.com/400/400/food/1'...}" />
           </folding>
         </state>
       </provider>
