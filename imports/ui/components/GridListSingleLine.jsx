@@ -27,14 +27,14 @@ class GridListSingleLine extends Component {
 
     } else {
       this.state.orderObj[title] = this.state.orderObj[title] + 1;
-    }
 
+    }
 
     this.setState(
       {
-        order: title,
-      }
-    )
+        quantity: this.state.quantity+1
+      });
+
   };
 
   handleToggle = () =>{
@@ -100,7 +100,7 @@ class GridListSingleLine extends Component {
           />
         </MuiThemeProvider>
 
-        <OrderDrawerContainer cartID={this.state.currentCartID} openDrawer={this.state.open} order={this.state.order} orderObj={this.state.orderObj}/>
+        <OrderDrawerContainer quantity={this.state.quantity} cartID={this.state.currentCartID} openDrawer={this.state.open} order={this.state.order} orderObj={this.state.orderObj}/>
 
 
       </div>

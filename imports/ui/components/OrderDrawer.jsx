@@ -13,14 +13,14 @@ import { Carts, Orders } from '../../api/orders';
 class OrderDrawer extends Component {
 
 
-  componentDidUpdate(prevProps) {
+  componentWillUpdate(nextProps) {
     console.log("this props " + JSON.stringify(this.props.orderObj));
-    console.log("next props " + JSON.stringify(prevProps.orderObj));
+    console.log("next props " + JSON.stringify(nextProps.orderObj));
 
     //if (JSON.stringify(this.props.orderObj) !== JSON.stringify(nextProps.orderObj)) {
 
 
-    Meteor.call('cart.update', prevProps.cartID, prevProps.orderObj, (error) => {
+    Meteor.call('cart.update', this.props.cartID, this.props.orderObj, (error) => {
       if (error) {
         console.log("error " + error.reason);
       } else {
@@ -63,6 +63,8 @@ class OrderDrawer extends Component {
             {this.renderOrder()}
           </Drawer>
         </MuiThemeProvider>
+
+        <p>{this.props.quantity}</p>
 
       </div>
     );
