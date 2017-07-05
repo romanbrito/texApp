@@ -35,9 +35,9 @@ class OrderDrawer extends Component {
 
       console.log('render Order props ' + JSON.stringify(this.props.items.products));
 
-      // return this.props.items.products.map((item, index) => (
-      //   <MenuItem key={index}>{item}</MenuItem>
-      // ));
+      return this.props.items.products.map((item) => (
+        <MenuItem key={item.name}>{item.name} Quantity {item.Q}</MenuItem>
+      ));
 
     }
   }
@@ -61,8 +61,6 @@ class OrderDrawer extends Component {
             {this.renderOrder()}
           </Drawer>
         </MuiThemeProvider>
-
-        <p></p>
 
       </div>
     );
