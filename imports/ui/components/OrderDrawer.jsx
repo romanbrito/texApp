@@ -14,8 +14,6 @@ class OrderDrawer extends Component {
 
 
   componentWillUpdate(nextProps) {
-    console.log("this props " + JSON.stringify(this.props.orderObj));
-    console.log("next props " + JSON.stringify(nextProps.orderObj));
 
     //if (JSON.stringify(this.props.orderObj) !== JSON.stringify(nextProps.orderObj)) {
 
@@ -35,7 +33,7 @@ class OrderDrawer extends Component {
   renderOrder() {
     if (this.props.items) {
 
-      console.log('render Order props ' + this.props.items.products);
+      console.log('render Order props ' + JSON.stringify(this.props.items.products));
 
       // return this.props.items.products.map((item, index) => (
       //   <MenuItem key={index}>{item}</MenuItem>
@@ -58,13 +56,13 @@ class OrderDrawer extends Component {
             // onRequestChange={(open) => this.setState({open})}
           >
             <MenuItem onTouchTap={this.handleClose}>Cancel</MenuItem>
-            <MenuItem>Menu Item 1</MenuItem>
+            <MenuItem># of Items {this.props.quantity}</MenuItem>
             <MenuItem>Menu Item 2</MenuItem>
             {this.renderOrder()}
           </Drawer>
         </MuiThemeProvider>
 
-        <p>{this.props.quantity}</p>
+        <p></p>
 
       </div>
     );

@@ -12,21 +12,29 @@ class GridListSingleLine extends Component {
 
   state = {
     order:'',
-    orderObj: {},
+    orderObj: [],
     quantity:0,
     open: false,
     currentCartID: '',
   };
 
   getClick = (title) => {
-    //get item and put in mongodb
+    //get position in array
+    let elementPos = this.state.orderObj.map((item) => {return item.name; }).indexOf(title);
 
-    if (!this.state.orderObj[title]) {
+    // if item is not in array insert it
+    if (elementPos === -1) {
 
-      this.state.orderObj[title] = 1;
+      let ItemObject = {
+        name: title,
+        Q: 1,
+      };
+
+      this.state.orderObj.push(ItemObject);
 
     } else {
-      this.state.orderObj[title] = this.state.orderObj[title] + 1;
+      // update object in array
+      this.state.orderObj[elementPos].Q = this.state.orderObj[elementPos].Q + 1;
 
     }
 
@@ -44,7 +52,7 @@ class GridListSingleLine extends Component {
 
       let cart = {
         // user: Meteor.userId(),
-        products: {},
+        products: [],
       };
 
       Meteor.call('cart.insert', cart, (error, result) => {
