@@ -42,6 +42,18 @@ class OrderDrawer extends Component {
     }
   }
 
+  renderTotal() {
+    if (this.props.items) {
+
+      console.log('render Order props ' + JSON.stringify(this.props.items.products));
+
+      return this.props.items.products.reduce(function (acc, obj) {
+        return acc + obj.price*obj.Q
+      },0);
+
+    }
+  }
+
   render() {
     return (
       <div>
@@ -56,6 +68,7 @@ class OrderDrawer extends Component {
             </Link>
             <MenuItem># of Items {this.props.quantity}</MenuItem>
             {this.renderOrder()}
+            <MenuItem> Total {this.renderTotal()}</MenuItem>
           </Drawer>
         </MuiThemeProvider>
 
